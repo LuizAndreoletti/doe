@@ -164,13 +164,16 @@
                                 <div class="modal-dialog" role="document">
                                   <div class="modal-content">
                                     <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                      <h5 class="modal-title" id="exampleModalLabel">Dados de contato</h5>
                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                       </button>
                                     </div>
                                     <div class="modal-body">
-                                      ...
+                                      <h3>Telefone: (11)98563-5290</h3>
+                                      <hr>
+                                      <div id="googleMap" style="width:100%;height:400px;"></div>
+                                      
                                     </div>
                     
                                   </div>
@@ -231,11 +234,16 @@
     <script src="https://kit.fontawesome.com/84d31f13e8.js" crossorigin="anonymous"></script>
 
     <script>
-        function contato() {
-            alert("Telefone: 119606-79679\nE-mail: anasil33@gmail.com");
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
         }
-
-    </script>
+        </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
 </body>
 
