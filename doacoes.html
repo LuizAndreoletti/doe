@@ -17,21 +17,22 @@
     </header>
     <main>
         <section class="item-list">
-            <h2>Produtos Cadastrados</h2>
+            <h2>Minhas doações</h2>
             <ul id="product-list">
                 <!-- Aqui serão exibidos os produtos cadastrados -->
                 <li class="product-item">
-                    <h3>Produto 1</h3>
-                    <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Preço: R$ 50,00</p>
-                    <p>Quantidade: 10</p>
+                    
+                    <h3>kit mesa e cadeira infantil branca</h3>
+                    <p>Descrição: kit com mesa e cadeira
+                        mesa: altura 45cm comprimento 53cm largura 49cm
+                        cadeira: suporta ate 45kg indicado para crianças de ate 5 anos. largura 26cm altura 50cm. cadeira c marcas de uso</p>
+                    
                     <button class="edit-button">Editar</button>
                 </li>
                 <li class="product-item">
-                    <h3>Produto 2</h3>
-                    <p>Descrição: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Preço: R$ 30,00</p>
-                    <p>Quantidade: 5</p>
+                    <h3>Vaso de cerâmica branco com furo 10cm</h3>
+                    <p>vaso de cerâmica branco com furo embaixo, 10cm de altura e 12cm de diâmetro</p>
+                    
                     <button class="edit-button">Editar</button>
                 </li>
             </ul>
@@ -39,21 +40,15 @@
         <section class="item-form">
             <h2>Adicionar Novo Item</h2>
             <form id="add-item-form">
-                <label for="item-name">Nome do Item:</label>
-                <input type="text" id="item-name" name="item-name" required>
+                <label for="item-name">Nome da doação:</label>
+                <input type="text" id="item-name" name="item-name" >
 
-                <label for="item-description">Descrição:</label>
+                <label for="item-description">Descrição da doação:</label>
                 <textarea id="item-description" name="item-description" rows="4"></textarea>
-
-                <label for="item-price">Preço:</label>
-                <input type="number" id="item-price" name="item-price" step="0.01" required>
-
-                <label for="item-quantity">Quantidade:</label>
-                <input type="number" id="item-quantity" name="item-quantity" required>
 
                 <div class="form-group">
                     <label for="categoria">Categoria:</label>
-                    <select id="categoria" name="categoria" required>
+                    <select id="categoria" name="categoria" >
                         <option value="">Selecione...</option>
                         <option value="eletronico">Eletrônico</option>
                         <option value="vestuario">Vestuário</option>
@@ -63,6 +58,7 @@
                 </div>
 
                 <button type="submit">Adicionar Item</button>
+                <button  style="background-color: red;" formaction="index2.html">Cancelar</button>
             </form>
         </section>
     </main>
